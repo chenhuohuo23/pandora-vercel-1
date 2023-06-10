@@ -6,6 +6,10 @@
     }
   ],
   "rewrites": [
+        {
+      "source":"/api/:path((?!auth|accounts).*)",
+      "destination":"https://ai.fakeopen.com/api/:path*"
+    },
     {
       "source":"/v1/:path(.*)",
       "destination":"https://api.openai.com/v1/:path*"
