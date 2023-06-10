@@ -7,10 +7,6 @@
   ],
   "rewrites": [
     {
-      "source":"/api/:path((?!auth|accounts).*)",
-      "destination":"https://open.cggpt666.top/api/:path*"
-    },
-    {
       "source":"/v1/:path(.*)",
       "destination":"https://api.openai.com/v1/:path*"
     },
